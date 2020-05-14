@@ -1,0 +1,249 @@
+@charset "UTF-8";
+// Color
+@import "../../node_modules/materialize-css/sass/components/color-variables";
+@import "../../node_modules/materialize-css/sass/components/color-classes";
+
+//Materialize Vars
+$box_shadow: 0px 4px 7px darken(#5f7f9e, 15) !important;
+$primary_color: darken(#6c99bf, 5) !default;
+$secondary_color: color("blue", "darken-2") !default;
+$font-stack: "Montserrat", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+   "Helvetica Neue", sans-serif !default;
+// #5f7f9e
+
+$main-text-color: #126ab5 !important;
+
+.main-text-color {
+   color: $main-text-color;
+}
+
+.whole-screen {
+   height: 100vh;
+}
+// Modify Styles
+html {
+   background: linear-gradient(#6c99bf, #89c3f3) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+//Container Styles
+.dark-bg {
+   background: darken(#6c99bf, 5) !important;
+}
+
+.light-bg {
+   background: lighten(#89c3f3, 5) !important;
+}
+
+//Navbar
+nav {
+   font-weight: bold !important;
+   font-size: 1rem !important;
+   font-family: "Montserrat", sans-serif !important;
+   box-shadow: none !important;
+}
+
+//Logo
+.brand-logo {
+   font-size: 1.71rem !important;
+   // color: #126ab5 !important;
+   color: whitesmoke !important;
+}
+
+// Hero Area
+.main-text {
+   color: #1157e6 !important;
+   font-family: "Montserrat", sans-serif !important;
+   font-weight: bold !important;
+   font-size: 3.92rem !important;
+   margin-bottom: 0.7rem !important;
+}
+.secondary-text {
+   color: white !important;
+   font-family: "Montserrat", sans-serif !important;
+   font-weight: bold !important;
+   font-size: 1.71rem !important;
+}
+.hero-img {
+   box-shadow: $box_shadow;
+}
+.pl-0 {
+   padding-left: 0px !important;
+}
+
+.pl-25 {
+   padding-left: 45px !important;
+}
+.img-container {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+}
+.blinking {
+   animation: blink 1s linear 1s infinite;
+}
+@keyframes blink {
+   0% {
+      opacity: 1;
+   }
+   25% {
+      opacity: 0.75;
+   }
+   50% {
+      opacity: 0.5;
+   }
+   75% {
+      opacity: 0.25;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+//Section Headers
+.header-bg {
+   background: #034f8d;
+}
+
+//Skills
+.title-font {
+   font-weight: bold !important;
+   font-size: 1.5rem !important;
+   font-family: "Montserrat", sans-serif !important;
+}
+.content-font {
+   font-weight: bold !important;
+   font-size: 1rem !important;
+   font-family: "Montserrat", sans-serif !important;
+}
+.bg-gradient-dark {
+   background: linear-gradient(#034f8d, #4fc0ec) no-repeat center center fixed;
+}
+
+.bg-gradient-light {
+   background: linear-gradient(#0eb5f7, #25dbf3) no-repeat center center fixed;
+}
+.mb-10 {
+   margin-bottom: 10px !important;
+}
+.skill-item {
+   border-bottom: none !important;
+   font-size: 1.01rem !important;
+}
+
+//Portfolio
+
+.carousel-fixed-item {
+   bottom: 4rem !important;
+}
+
+.mx-10 {
+   margin: 0 10px !important;
+}
+.m-10 {
+   margin: 10px !important;
+}
+.glowing {
+   animation: glow 3s linear 1s infinite;
+}
+@keyframes glow {
+   0% {
+      box-shadow: 0px 0px 10px #fff;
+   }
+   25% {
+      box-shadow: 0px 3px 10px #fff;
+   }
+   50% {
+      box-shadow: 0px 6px 10px #fff;
+   }
+   75% {
+      box-shadow: 0px 3px 10px #fff;
+   }
+   100% {
+      box-shadow: 0px 0px 10px #fff;
+   }
+}
+
+.indicator-item {
+   background-color: darkorange !important;
+   animation: glow 3s linear 1s infinite;
+}
+.indicator-item.active {
+   background-color: #000 !important;
+   animation: glow 3s linear 1s infinite;
+}
+//Curriculum Vitae
+.vertical-timeline-element-content {
+   box-shadow: $box_shadow;
+}
+.vertical-timeline-element-date {
+   color: #fff !important;
+   opacity: 1 !important;
+   margin-left: 0.5rem !important;
+}
+//Education
+.education-item {
+   height: 10rem !important;
+}
+//Footer
+footer {
+   background: linear-gradient(#034f8d, #4fc0ec) no-repeat center center fixed !important;
+}
+.phone-btn {
+   color: white !important;
+   font-size: 1.2rem !important;
+   cursor: default !important;
+}
+//Responsive
+@media only screen and (max-width: 375px) {
+   nav .brand-logo {
+      font-size: 17px !important;
+   }
+
+   .main-text {
+      font-size: 2.3rem !important;
+      margin-bottom: 0.3rem !important;
+   }
+
+   .secondary-text {
+      font-size: 1.21rem !important;
+   }
+
+   .pl-25 {
+      padding-left: 20px !important;
+   }
+
+   .education-item {
+      height: 13rem !important;
+   }
+}
+@media only screen and (min-width: 376px) and (max-width: 760px) {
+   nav .brand-logo {
+      font-size: 20px !important;
+   }
+
+   .main-text {
+      font-size: 3.2rem !important;
+      margin-bottom: 0.5rem !important;
+   }
+
+   .pl-25 {
+      padding-left: 30px !important;
+   }
+   .education-item {
+      height: 12rem !important;
+   }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
+   .skill-card {
+      height: 25rem !important;
+   }
+   .education-item {
+      height: 13rem !important;
+   }
+}
+@import "../../node_modules/materialize-css/sass/materialize";
